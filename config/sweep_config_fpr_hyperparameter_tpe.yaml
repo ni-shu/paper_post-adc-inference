@@ -1,0 +1,8 @@
+defaults:
+  num_worker: 1
+  acquisition: tpe
+  x_dim: 3
+  f_star_spec: {type: sine_mix, a: 0.0, b: 0.0, normalize: false}
+
+grid:
+  tpe_gamma: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]

@@ -1,0 +1,8 @@
+defaults:
+  num_worker: 1
+  x_dim: 3
+  f_star_spec: {type: sine_mix, a: 0.0, b: 0.0, normalize: false}
+
+grid:
+  num_steps: [25, 50, 75, 100]
+  acquisition: [ucb, tpe]

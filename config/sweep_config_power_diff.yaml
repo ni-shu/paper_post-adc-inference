@@ -1,0 +1,11 @@
+defaults:
+  num_worker: 1
+  methods: [randomized, bonferroni]
+  x_dim: 3
+  alternative: greater
+  f_star_spec: {normalize: false}
+
+grid:
+  acquisition: [ucb, tpe]
+  f_star_spec.type: [sinc, cosine, chirp, gaussian_bump, nonsmooth_peak, negative_forrester]
+  f_star_spec.a: [1.0, 2.0, 4.0, 8.0]
